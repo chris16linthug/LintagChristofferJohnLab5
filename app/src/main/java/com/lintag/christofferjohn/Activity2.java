@@ -19,7 +19,7 @@ public class Activity2 extends AppCompatActivity {
             i = new Intent(this,MainActivity.class);
             startActivity(i);
         } else if(v.getId()==R.id.btnMap2){
-            i = new Intent(Intent.ACTION_VIEW);
+            i = new Intent (Intent.ACTION_VIEW);
             i.setData(Uri.parse("geo:14.5321,120.9838"));
             chooser = Intent.createChooser(i, "Open with?");
             startActivity(chooser);
