@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.633" />
 
     <Button
-        android:id="@+id/btnScreen1"
+        android:id="@+id/act1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -94,7 +94,7 @@
         app:layout_constraintVertical_bias="0.984" />
 
     <Button
-        android:id="@+id/btnMap2"
+        android:id="@+id/map2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"

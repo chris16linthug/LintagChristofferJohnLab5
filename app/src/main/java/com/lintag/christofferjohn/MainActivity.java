@@ -14,15 +14,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Intent i = new Intent(this, MyCustomService.class);
-        startActivity(i);
+        startService(i);
     }
 
     public void process(View v){
         Intent i=null, chooser=null;
-        if(v.getId()==R.id.btnScreen2){
+        if(v.getId()==R.id.act2){
             i = new Intent(this,Activity2.class);
             startActivity(i);
-        } else if(v.getId()==R.id.btnMap){
+        } else if(v.getId()==R.id.map1){
             i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse("geo:14.6207,121.0534"));
             chooser = Intent.createChooser(i, "Open with?");

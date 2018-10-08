@@ -15,10 +15,10 @@ public class Activity2 extends AppCompatActivity {
 
     public void process(View v){
         Intent i=null, chooser=null;
-        if(v.getId()==R.id.btnScreen1){
+        if(v.getId()==R.id.act1){
             i = new Intent(this,MainActivity.class);
             startActivity(i);
-        } else if(v.getId()==R.id.btnMap2){
+        } else if(v.getId()==R.id.map2){
             i = new Intent (Intent.ACTION_VIEW);
             i.setData(Uri.parse("geo:14.5321,120.9838"));
             chooser = Intent.createChooser(i, "Open with?");
